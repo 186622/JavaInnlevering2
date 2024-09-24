@@ -1,22 +1,21 @@
 package no.hvl.dat100.tabeller;
-
+import java.util.Arrays;
 public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
-	System.out.print("[");
+
 	for (int i = 0; i < tabell.length;i++) {
 		System.out.print(tabell[i] + " ");
 	}
-	System.out.print("]");
+
 
 	}
 
 	// b)
 	public static String tilStreng(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
+	    String resultat = Arrays.toString(tabell);
+	    return resultat.replaceAll("\\s+", "");
 	}
 
 	// c)
