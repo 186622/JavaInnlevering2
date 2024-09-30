@@ -2,16 +2,6 @@ package no.hvl.dat100.tabeller;
 
 public class Tabeller {
 
-	public static void main(String[] args) {
-		int[] test1 = { 10, 20, 30, 40, 50 };
-		int[] test2 = { 10, 20, 30, 40, 50, 60 };
-		int[] sammen;
-		sammen = settSammen(test1, test2);
-		System.out.println("Elementer: " + sammen.length);
-		skrivUt(sammen);
-		System.out.println(tilStreng(test1));
-	}
-
 	// a)
 	public static void skrivUt(int[] tabell) {
 
